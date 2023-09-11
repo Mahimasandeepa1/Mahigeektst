@@ -1,0 +1,66 @@
+*{
+    font-family:Roboto, Arial;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+    margin:0px;
+}
+
+body{
+    padding-top:90px;
+    padding-left:110px;
+    padding-right:10px;
+    background-image: url('Images/abstract-fluid-art-colors-free-vector.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+
+div{
+    border-radius:inherit;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:30px;
+    row-gap:20px;
+    
+}
+
+
+@media (max-width: 570px) {
+    .container{
+        grid-template-columns: 1fr;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .webtitle{
+        display:none;
+    }
+}
+
+@media (min-width: 571px) and (max-width: 860px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .webtitle{
+        display:none;
+    }
+}
+
+@media (min-width: 861) and (max-width: 1159px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1160px) {
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
